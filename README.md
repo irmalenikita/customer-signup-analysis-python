@@ -1,6 +1,8 @@
-﻿# Customer Signup Analysis (Python)
+﻿# Customer Sign-Up Analysis (Python)
 
-A small analytics project for exploring customer sign-up behavior from a CSV dataset. The workspace contains a Jupyter notebook (`Customer Sign-Up Analysis..ipynb`) that loads `customer_signups.csv`, performs data cleaning, exploratory analysis, and visualizations to support insights and recommendations.
+✅ Project Overview
+
+This project analyzes customer sign-up data for a SaaS company to understand user acquisition trends, demographics, and subscription behavior. The focus is on data cleaning, validation, and extracting actionable marketing insights.
 
 ## 📁 Repository structure
 
@@ -8,72 +10,47 @@ A small analytics project for exploring customer sign-up behavior from a CSV dat
 - `customer_signups.csv` - source dataset of historical sign-up records
 - `README.md` - project documentation
 
-## 🚀 Goals
+## 🛠️ Tools & Technologies
 
-1. Load and validate customer signup data
-2. Clean and transform fields (dates, categories, missing values)
-3. Analyze key metrics (signup trends, geography, channels, cohorts)
-4. Create visualizations for executive and product insights
-5. Document findings and recommend next steps
+- Python
+- Pandas
+- Data analysis (NumPy, Matplotlib, Seaborn, etc.)
 
-## 🛠️ Setup
+## 🎯 Project Objectives
 
-1. Install Python 3.9+ (or latest stable release)
-2. Create and activate a virtual environment:
+1. Clean and validate raw customer data
+2. Analyze acquisition channels and user demographics
+3. Identify subscription and marketing trends
+4. Provide data-driven business recommendations
 
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
+## 🧹 Data Preparation
 
-3. Install dependencies (typical packages used in analysis):
+- Cleaned dataset: reduced from 300 to 190 valid records
+- Removed duplicates and handled missing values
+- Standardized categories (gender, region, plans)
+- Converted date fields for time-based analysis
 
-   ```powershell
-   pip install pandas numpy matplotlib seaborn jupyterlab
-   ```
+## 📊 Analysis & Insights
 
-4. Launch Jupyter Notebook / Lab:
+- Top acquisition channels: YouTube, Instagram, Google
+- Balanced subscription distribution across Basic, Pro, and Premium
+- Average customer age: ~36 years
+- Premium plans slightly preferred by older users
 
-   ```powershell
-   jupyter lab
-   ```
+## 💡 Business Recommendations
 
-5. Open `Customer Sign-Up Analysis..ipynb` and run all cells.
-
-## 📊 Analysis flow
-
-- Data ingestion with `pandas.read_csv`
-- Validation (data types, duplicates, required fields)
-- Cleaning (parse dates, normalize categories, fill/drop missing values)
-- Feature engineering (e.g., signup month, signing channel cohort)
-- Exploratory Data Analysis (time series, distributions, pivot tables)
-- Visualizations (line charts, bar charts, heatmaps)
-
-## 💡 Key Questions
-
-- Are sign-ups growing or stagnant over time?
-- Which marketing channels convert best?
-- Do certain regions or segments outperform others?
-- Where should product/marketing prioritize retention efforts?
+- Invest in high-performing marketing channels (Google, YouTube)
+- Improve data collection in underperforming regions
+- Tailor marketing strategies based on subscription type
+- Implement automated data validation processes
 
 ## ✅ Usage
 
 1. Open the dataset and notebook.
-2. Edit or extend analysis to test new hypotheses.
-3. Export results to CSV/PNG or integrate with Altair/Plotly for dashboards.
+2. Run analysis cells in `Customer Sign-Up Analysis..ipynb`.
+3. Extend analyses to new segments, channels, or cohorts.
+4. Export results to CSV/PNG or share via dashboards.
 
-## 📝 Notes
 
-- Rename `customer_signups.csv` to your own dataset filename if needed.
-- If dataset contains PII, ensure compliance with privacy and security policy.
 
-## 🤝 Contributing
-
-- Fork the repo and submit a pull request.
-- Add new analysis cells, metrics, or automated scripts to `analysis.py` if added.
-- Include context and assumptions when proposing future model/ML work.
-
-## 📌 License
-
-MIT License (or your preferred license)
 
